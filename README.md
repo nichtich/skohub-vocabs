@@ -47,14 +47,16 @@ After changes to your `.env` or `data/*` files, make sure to delete the `.cache`
 The static site generator will parse all turtle files in `./data` and build the vocabularies it finds:
 
     $ npm run build
-
-The build can be found in `public/` and be served e.g. by Apache. The directory structure is derived from the URIs of the SKOS concepts, e.g. `https://w3id.org/class/hochschulfaecher/scheme` will be available from `public/w3id.org/class/hochschulfaecher/scheme(.html|.json)`.
+ 
+ https://w3id.org/
+ 
+The build can be found in `public/` and be served e.g. by Apache. The directory structure is derived from the URIs of the SKOS concepts, e.g. `https://w3id.org/kim/hochschulfaechersystematik/scheme` will be available from `public/w3id.org/kim/hochschulfaechersystematik/scheme(.html|.json)`.
 
 You can also run the development web server:
 
     $ npm run develop
 
-to serve the build from `http://localhost:8000/`. Again, the URL is based on the SKOS URIs, e.g. `http://localhost:8000/w3id.org/class/hochschulfaecher/scheme.html`
+to serve the build from `http://localhost:8000/`. Again, the URL is based on the SKOS URIs, e.g. `http://localhost:8000/w3id.org/kim/hochschulfaechersystematik/scheme.html`
 
 ## Running the webhook server
 
